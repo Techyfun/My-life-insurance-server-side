@@ -5,10 +5,8 @@ const colors = require('colors');
 require("dotenv").config()
 const port = process.env.PORT || 8080;
 
-//middlewares
 app.use(express.json());
 app.use(cors());
-
 
 app.get("/", (req, res) => {
   res.send("Route is working! YaY!");
